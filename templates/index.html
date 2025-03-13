@@ -8,46 +8,56 @@
   <link rel="stylesheet" href="index.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      color: #333;
-      text-align: center;
-      padding: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #000;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      display: flex;
     }
 
     form {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 20px;
     }
 
     input[type="file"] {
-      margin-bottom: 10px;
+      margin: 50px;
     }
 
     button {
       padding: 10px 20px;
-      background-color: #007BFF;
+      background-color: #1544bb;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
 
+    .container {
+      background-color: #191717;
+      padding: 20px;
+      border-radius: 7px;
+      width: 400px;
+    }
+
+    .choose-file {
+      background-color: rgb(75, 71, 71);
+      border-radius: 5px;
+      padding: 15px;
+      width: 190px;
+    }
   </style>
 </head>
 
 <body>
-  <form method="POST" enctype="multipart/form-data">
-    <input type="file" name="fileupload" required>
-    <button type="submit">Upload File</button>
-  </form>
+  <div class="container">
+    <form method="POST" enctype="multipart/form-data">
+      <input class="choose-file" type="file" name="fileupload" required>
+      <button type="submit">Upload File</button>
+    </form>
+  </div>
 </body>
 
 </html>
